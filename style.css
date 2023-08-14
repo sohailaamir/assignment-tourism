@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.home-background{
+    background-image: url("https://img.freepik.com/free-vector/vacation-holidays-background-with-realistic-globe-suitcase-photo-camera_1284-10476.jpg?size=338&ext=jpg&uid=R81878727&ga=GA1.2.63126984.1665763205");
+    height: 100vh;
+    background-size: cover;
+}
+
+.home-card{
+    text-align: center;
+    background-color: white;
+    margin: 50px;
+    padding: 20px;
+}
+
+.home-card-heading{
+    text-align: center;
+    color: darkblue;
+    font-size: 50px;
+    font-family: "Labster";
+    font-weight: bold;
+}
+
+.home-card-paragraph{
+    text-align: center;
+    color: darkblue;
+    font-size: 25px;
+    font-family: "Caveat";
+    font-weight: bold;
+}
+
+.home-button{
+    height: 30px;
+    width: 120px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.favorite-places-background{
+    background-image:url("https://images.unsplash.com/photo-1515261439133-0f6cfb098e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGlnaHQlMjBjb2xvdXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    height: 100vh;
+    background-size: cover;
+}
+
+.favorite-places-heading{
+    color: white;
+    font-size: 30px;
+    font-family: "labster";
+    font-weight: bold;
+    padding: 24px;
+}
+
+.favorite-places-card{
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.favorite-places-card-heading{
+    color: rgb(23, 23, 149);
+    font-family: 'Labster';
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.favorite-places-card-discription{
+    font-family: 'roboto';
+    font-size: 13px;
+    color: #6c6b70;
+}
+
+.favorite-places-card-image{
+    height: 100px;
+    width: 80px;
+}
+
+.detailed-view-background{
+    background-image: url("https://img.freepik.com/free-vector/vacation-holidays-background-with-realistic-globe-suitcase-photo-camera_1284-10476.jpg?size=338&ext=jpg&uid=R81878727&ga=GA1.2.63126984.1665763205");
+    height: 100vh;
+    background-size: cover;
+}
+
+.detailed-view-heading{
+    color: white;
+    font-family: "roboto";
+    font-size: 24px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.detailed-view-card{
+    background-color: white;
+    border-radius: 8px;
+    margin: 24px;
+}
+
+.detailed-view-text{
+    padding: 24px;
+}
+
+.detailed-view-card-heading{
+    color: darkblue;
+    font-family: "sans-serif";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.detailed-view-card-discription{
+    color: black;
+    font-family: "Roboto";
+    font-size: 15px;
+}
