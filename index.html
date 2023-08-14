@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tourism Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="home-background d-flex flex-column justify-content-end"
+      id="sectionHome"
+    >
+      <div class="home-card">
+        <h1 class="home-card-heading">Tourism</h1>
+        <p class="home-card-paragraph">A Portal for Planing your Tourism</p>
+        <button class="home-button" onclick="display('sectionFavoritePlaces')">
+          Get Started
+        </button>
+      </div>
+      <div class="favorite-places-background" id="sectionFavoritePlaces">
+        <h1 class="favorite-places-heading">Favourite Places</h1>
+        <div
+          class="favorite-places-card d-flex flex-row"
+          onclick="display('sectionTajMahal')"
+        >
+          <div>
+            <h1 class="favorite-places-card-heading">Taj Mahal</h1>
+            <p class="favorite-places-card-discription">
+              The Taj Mahal is an Islamic ivory-white marble mausoleum on the
+              right bank of the river Yamuna in the Indian city of Agra. It was
+              commissioned in 1631 by the Mughal emperor Shah Jahan to house the
+              tomb of his favourite wife, Mumtaz.
+            </p>
+          </div>
+          <img src="https://img.freepik.com/free-photo/beautiful-view-taj-mahal-during-day-with-gloomy_181624-16674.jpg?size=626&ext=jpg&uid=R81878727&ga=GA1.2.63126984.1665763205" class="favorite-places-card-image" />
+        </div>
+        <div
+          class="favorite-places-card d-flex flex-row"
+          onclick="display('sectionIndiaGate')"
+        >
+          <div>
+            <h1 class="favorite-places-card-heading">India Gate</h1>
+            <p class="favorite-places-card-discription">
+              The India Gate (formerly known as the All India War Memorial) is a
+              war memorial located astride the Rajpath on the eastern edge of
+              the "ceremonial axis" of New Delhi, formerly called Kingsway.
+            </p>
+          </div>
+          <img src="https://img.freepik.com/premium-photo/canopy-gate-india-night-illumination-new-delhi_400112-345.jpg?size=626&ext=jpg&uid=R81878727&ga=GA1.2.63126984.1665763205" class="favorite-places-card-image" />
+        </div>
+        <div
+          class="favorite-places-card d-flex flex-row"
+          onclick="display('sectionRedFort')"
+        >
+          <div>
+            <h1 class="favorite-places-card-heading">Red Fort</h1>
+            <p class="favorite-places-card-discription">
+              The Red Fort or Lal Qila is a historic fort in Old Delhi, Delhi in
+              India that served as the main residence of the Mughal Emperors.
+              Emperor Shah Jahan commissioned construction of the Red Fort on 12
+              May 1638.
+            </p>
+          </div>
+          <img src="https://t3.ftcdn.net/jpg/01/13/01/90/240_F_113019088_mGM0ASg3yV7ixNrv6ZPGFv4V38auR0e4.jpg" class="favorite-places-card-image" />
+        </div>
+        <div
+          class="favorite-places-card d-flex flex-row"
+          onclick="display('sectionVictoriaMemorial')"
+        >
+          <div>
+            <h1 class="favorite-places-card-heading">Victoria Memorial</h1>
+            <p class="favorite-places-card-discription">
+              The Victoria Memorial is a large marble building on the Maidan in
+              Central Kolkata, built between 1906 and 1921. It is dedicated to
+              the memory of Queen Victoria, Empress of India from 1876 to 1901.
+            </p>
+          </div>
+          <img
+            src="https://t3.ftcdn.net/jpg/01/13/01/90/240_F_113019088_mGM0ASg3yV7ixNrv6ZPGFv4V38auR0e4.jpg"
+            class="favorite-places-card-image"
+          />
+        </div>
+        <button class="btn bg-primary" onclick="display('sectionHome')">
+          Goto Home
+        </button>
+      </div>
+      <div class="detailed-view-background" id="sectionTajMahal">
+        <h1 class="detailed-view-heading">Detailed View of Taj Mahal</h1>
+        <div class="detailed-view-card">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://t3.ftcdn.net/jpg/00/65/67/92/240_F_65679240_fTWknlCHCPqUNgUIHoi8Npm67wdkKsdq.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://t3.ftcdn.net/jpg/03/04/85/26/240_F_304852693_nSOn9KvUgafgvZ6wM0CNaULYUa7xXBkA.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://t4.ftcdn.net/jpg/01/97/72/79/240_F_197727967_MSfGDL0XvgFDjsWnjM03pInQ2h3zu9C7.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+          <div class="detailed-view-text">
+            <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+            <p class="detailed-view-card-discription">
+              The Taj Mahal ('Crown of the Palace'), is an Islamic ivory-white
+              marble mausoleum on the right bank of the river Yamuna in the
+              Indian city of Agra. It was commissioned in 1631 by the Mughal
+              emperor Shah Jahan (r. 1628–1658) to house the tomb of his
+              favourite wife, Mumtaz Mahal; it also houses the tomb of Shah
+              Jahan himself. The tomb is the centrepiece of a 17-hectare
+              (42-acre) complex, which includes a mosque and a guest house, and
+              is set in formal gardens bounded on three sides by a crenellated
+              wall.
+            </p>
+          </div>
+        </div>
+        <button class="btn bg-primary" onclick="display('sectionHome')">
+          Goto Home
+        </button>
+        <button
+          class="btn bg-success"
+          onclick="display('sectionFavoritePlaces')"
+        >
+          Back
+        </button>
+      </div>
+      <div class="detailed-view-background" id="sectionIndiaGate">
+        <h1 class="detailed-view-heading">Detailed View of India Gate</h1>
+        <div class="detailed-view-card">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://t3.ftcdn.net/jpg/04/01/43/06/240_F_401430617_QU5FmwCbN3oiysrAnVN2yXreAkbPOESe.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://t3.ftcdn.net/jpg/01/42/18/82/240_F_142188286_UOt8SFakbRt1kkOgm0VJ7ghYzKLsLRZf.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://img.freepik.com/premium-photo/canopy-india-gate-sunset-new-delhi-view-from-national-war-memorial_400112-339.jpg?size=626&ext=jpg&uid=R81878727&ga=GA1.2.63126984.1665763205"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+          <div class="detailed-view-text">
+            <h1 class="detailed-view-card-heading">India Gate</h1>
+            <p class="detailed-view-card-discription">
+              The India Gate is a war memorial located astride the Rajpath on
+              the eastern edge of the "ceremonial axis" of New Delhi, formerly
+              called duty path. It stands as a memorial to 84,000 soldiers of
+              the British Indian Army who died between 1914 and 1921 in the
+              First World War, in France, Flanders, Mesopotamia, Persia, East
+              Africa, Gallipoli and elsewhere in the Near and the Far East, and
+              the Third Anglo-Afghan War. 13,300 servicemen's names, including
+              some soldiers and officers from the United Kingdom, are inscribed
+              on the gate. Designed by Sir Edwin Lutyens, the gate evokes the
+              architectural style of the memorial arch such as the Arch of
+              Constantine, in Rome, and is often compared to the Arc de Triomphe
+              in Paris, and the Gateway of India in Mumbai.
+            </p>
+          </div>
+        </div>
+        <button class="btn bg-primary" onclick="display('sectionHome')">
+          Goto Home
+        </button>
+        <button
+          class="btn bg-success"
+          onclick="display('sectionFavoritePlaces')"
+        >
+          Back
+        </button>
+      </div>
+      <div class="detailed-view-background" id="sectionRedFort">
+        <h1 class="detailed-view-heading">Detailed View of Red Fort</h1>
+        <div class="detailed-view-card">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://t3.ftcdn.net/jpg/05/32/65/22/240_F_532652291_J1PUxED6loyqWg4EqcJ9FMlhMpKbmTuq.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://t4.ftcdn.net/jpg/03/71/16/31/240_F_371163126_P9QtCDDVYujoJw32uDwvg8svaZLYiery.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://t3.ftcdn.net/jpg/00/12/38/60/240_F_12386016_BOpw8OyutiBKOxLPTHeQKXosOpDfjkBl.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+          <div class="detailed-view-text">
+            <h1 class="detailed-view-card-heading">Red Fort</h1>
+            <p class="detailed-view-card-discription">
+              The Red Fort or Lal Qila (Hindustani) is a historic fort in Old
+              Delhi, Delhi in India that served as the main residence of the
+              Mughal Emperors. Emperor Shah Jahan commissioned construction of
+              the Red Fort on 12 May 1638, when he decided to shift his capital
+              from Agra to Delhi. Originally red and white, its design is
+              credited to architect Ustad Ahmad Lahori, who also constructed the
+              Taj Mahal. The fort represents the peak in Mughal architecture
+              under Shah Jahan, and combines Persianate palace architecture with
+              Indian traditions.
+            </p>
+          </div>
+        </div>
+        <button class="btn bg-primary" onclick="display('sectionHome')">
+          Goto Home
+        </button>
+        <button
+          class="btn bg-success"
+          onclick="display('sectionFavoritePlaces')"
+        >
+          Back
+        </button>
+      </div>
+      <div class="detailed-view-background" id="sectionVictoriaMemorial">
+        <h1 class="detailed-view-heading">
+          Detailed View of Victoria Memorial
+        </h1>
+        <div class="detailed-view-card">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://t3.ftcdn.net/jpg/01/05/09/50/240_F_105095059_tTBzNg99vYmQxZAnQIGyxTSxDf0j60Dq.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://t3.ftcdn.net/jpg/03/19/81/44/240_F_319814456_HXxjvQJn3ITjt54hp2MQiekeCURuxvg4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://t3.ftcdn.net/jpg/05/14/09/70/240_F_514097042_lsXnnTuGY4ECHgOCiKS5rTpwiCMURr6L.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-target="#carouselExampleIndicators"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+          <div class="detailed-view-text">
+            <h1 class="detailed-view-card-heading">Victoria Memorial</h1>
+            <p class="detailed-view-card-discription">
+              The Victoria Memorial is a large marble building on the Maidan in
+              Central Kolkata, built between 1906 and 1921. It is dedicated to
+              the memory of Queen Victoria, Empress of India from 1876 to 1901.
+              The largest monument to a monarch anywhere in the world, it stands
+              in 64 acres of gardens and is now a museum under the control of
+              the Ministry of Culture. Following the death of Queen Victoria in
+              January 1901, Lord Curzon, the Viceroy of India, suggested that a
+              fitting memorial to the late Queen-Empress should be created in
+              Calcutta, now called Kolkata, then the capital of British India.
+            </p>
+          </div>
+        </div>
+        <button class="btn bg-primary" onclick="display('sectionHome')">
+          Goto Home
+        </button>
+        <button
+          class="btn bg-success"
+          onclick="display('sectionFavoritePlaces')"
+        >
+          Back
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
